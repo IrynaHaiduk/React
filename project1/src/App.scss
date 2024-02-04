@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.posts {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .postItem {
+    padding: 20px;
+    background-color: #a0e0e4;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    align-items: flex-start;
+
+    img {
+      width: 150px;
+      height: 150px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.container{
+  max-width: 678px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    input {
+      padding: 6px 12px;
+    }
+  }
+
+  button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+  }
+}
